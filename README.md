@@ -7,12 +7,11 @@ This folder is a static GitHub Pages website for selling ProfitProphet.
 - `index.html` - main sales page
 - `inquiry.html` - payment inquiry page with email links
 - `styles.css` - site styling
-- `assets/profitprophet-dashboard.png` - product preview image
 
 ## Publish With GitHub Pages
 
 1. Create a new GitHub repository, for example `profitprophet-site`.
-2. Upload everything in this folder to the root of that repository, including the `assets` folder.
+2. Upload everything in this folder to the root of that repository.
 3. In GitHub, open the repository's `Settings`.
 4. Click `Pages` in the left sidebar.
 5. Under `Build and deployment`, set `Source` to `Deploy from a branch`.
@@ -22,4 +21,4 @@ This folder is a static GitHub Pages website for selling ProfitProphet.
 
    `https://YOUR-USERNAME.github.io/profitprophet-site/`
 
-Every payment or purchase button points to `inquiry.html`, where visitors are directed to email `profitprophet143@gmail.com`.
+Every payment or purchase button points to `inquiry.html`, where visitors are directed to email `profitprophet143@gmail.com`. The listed price is `$400`.
