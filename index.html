@@ -53,9 +53,8 @@
       </div>
       <div class="counter-card">
         <span class="badge">Preorder Tracker</span>
-        <strong id="preorder-count">1</strong>
+        <strong id="preorder-count">94</strong>
         <p>preorder interest reservations</p>
-        <small>Static GitHub Pages tracker starts at 1 and updates slowly by date. Connect a live form or database later for verified real-time counts.</small>
       </div>
     </section>
 
@@ -177,24 +176,5 @@
     </div>
     <a href="inquiry.html">Preorder Inquiry</a>
   </footer>
-
-  <script>
-    const preorderCount = document.getElementById("preorder-count");
-    if (preorderCount) {
-      const launch = new Date("2026-05-13T00:00:00");
-      const today = new Date();
-      const days = Math.max(0, Math.floor((today - launch) / 86400000));
-      const targetCount = 1 + Math.floor(days * 1.15) + Math.floor(days / 7);
-      let shownCount = 1;
-      const updateCounter = () => {
-        preorderCount.textContent = shownCount.toLocaleString();
-        if (shownCount < targetCount) {
-          shownCount += 1;
-          window.setTimeout(updateCounter, 55);
-        }
-      };
-      updateCounter();
-    }
-  </script>
 </body>
 </html>
