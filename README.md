@@ -1,12 +1,13 @@
 # ProfitProphet Website
 
-This folder is a static GitHub Pages website for selling ProfitProphet.
+This folder is a static GitHub Pages website for ProfitProphet preorder inquiries.
 
 ## Files
 
-- `index.html` - main sales page
-- `inquiry.html` - payment inquiry page with email links
+- `index.html` - main preorder sales page
+- `inquiry.html` - preorder inquiry page with email links
 - `styles.css` - site styling
+- `profitprophet-logo.png` - site logo
 
 ## Publish With GitHub Pages
 
@@ -21,4 +22,6 @@ This folder is a static GitHub Pages website for selling ProfitProphet.
 
    `https://YOUR-USERNAME.github.io/profitprophet-site/`
 
-Every payment or purchase button points to `inquiry.html`, where visitors are directed to email `profitprophet143@gmail.com`. The listed price is `$400`.
+Every preorder button points to `inquiry.html`, where visitors are directed to email `profitprophet143@gmail.com`. The listed preorder price is `$350`.
+
+Note: the preorder tracker and rotating quote section are marked as launch-layout/demo content. Replace them with verified data and real customer reviews before public launch.
