@@ -1,14 +1,15 @@
 :root {
-  --cream: #fbf5ed;
-  --cream-deep: #efe2d1;
-  --paper: rgba(255, 252, 247, 0.86);
-  --ink: #343638;
-  --muted: #6d6761;
-  --soft: #a8845d;
-  --gold: #c79a58;
-  --gold-dark: #8f663d;
-  --line: rgba(143, 102, 61, 0.22);
-  --shadow: 0 24px 70px rgba(91, 62, 33, 0.14);
+  --cream: #fbf4eb;
+  --cream-deep: #eadbc9;
+  --paper: rgba(255, 251, 245, 0.9);
+  --ink: #3d3e40;
+  --muted: #756d65;
+  --charcoal: #55585b;
+  --soft: #b28a62;
+  --gold: #c99a5b;
+  --gold-dark: #8d653e;
+  --line: rgba(141, 101, 62, 0.2);
+  --shadow: 0 22px 56px rgba(94, 67, 40, 0.12);
 }
 
 * {
@@ -22,8 +23,8 @@ html {
 body {
   margin: 0;
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.68), transparent 42%),
-    linear-gradient(180deg, var(--cream) 0%, #f8efe3 46%, #fffaf4 100%);
+    linear-gradient(135deg, rgba(255, 255, 255, 0.78), transparent 38%),
+    linear-gradient(180deg, #fbf4eb 0%, #f3e6d7 46%, #fff9f1 100%);
   color: var(--ink);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -41,7 +42,7 @@ a {
   min-height: 74px;
   padding: 16px clamp(18px, 4vw, 56px);
   border-bottom: 1px solid var(--line);
-  background: rgba(251, 245, 237, 0.9);
+  background: rgba(251, 244, 235, 0.92);
   backdrop-filter: blur(18px);
 }
 
@@ -49,7 +50,7 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  color: var(--ink);
+  color: var(--charcoal);
   font-weight: 850;
   letter-spacing: 0.08em;
   text-decoration: none;
@@ -63,7 +64,7 @@ a {
   place-items: center;
   border: 1px solid rgba(143, 102, 61, 0.34);
   border-radius: 8px;
-  background: linear-gradient(135deg, rgba(215, 177, 116, 0.48), rgba(255, 252, 247, 0.82));
+  background: linear-gradient(135deg, rgba(213, 174, 113, 0.5), rgba(255, 252, 247, 0.86));
   color: var(--gold-dark);
   font-weight: 900;
   letter-spacing: 0;
@@ -95,11 +96,11 @@ a {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.78fr);
-  gap: clamp(30px, 6vw, 80px);
+  grid-template-columns: minmax(0, 1.05fr) minmax(260px, 0.56fr);
+  gap: clamp(28px, 5vw, 64px);
   align-items: center;
   min-height: calc(100vh - 74px);
-  padding: clamp(56px, 8vw, 112px) clamp(18px, 5vw, 72px) 44px;
+  padding: clamp(52px, 7vw, 94px) clamp(18px, 5vw, 72px) 44px;
 }
 
 .hero-copy {
@@ -124,7 +125,8 @@ p {
 
 h1 {
   margin-bottom: 18px;
-  font-size: clamp(58px, 10vw, 118px);
+  color: var(--charcoal);
+  font-size: clamp(54px, 9vw, 104px);
   font-weight: 420;
   line-height: 0.9;
   letter-spacing: 0.12em;
@@ -154,17 +156,19 @@ h3 {
 .hero-logo-panel {
   display: grid;
   place-items: center;
-  padding: clamp(20px, 4vw, 44px);
+  justify-self: center;
+  width: min(100%, 390px);
+  padding: clamp(12px, 2.4vw, 24px);
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(255, 252, 247, 0.7);
-  box-shadow: var(--shadow);
+  background: rgba(255, 251, 245, 0.56);
+  box-shadow: 0 18px 42px rgba(94, 67, 40, 0.1);
 }
 
 .hero-logo-panel img,
 .side-logo {
   display: block;
-  width: 100%;
+  width: min(100%, 330px);
   height: auto;
   mix-blend-mode: multiply;
 }
@@ -192,7 +196,7 @@ h3 {
 }
 
 .button.primary {
-  background: linear-gradient(135deg, #d7b174, #f1d8a4);
+  background: linear-gradient(135deg, #d5ad70, #f3dcae);
   color: #2b2014;
   box-shadow: 0 12px 28px rgba(143, 102, 61, 0.2);
 }
@@ -272,7 +276,7 @@ h3 {
   gap: clamp(24px, 5vw, 56px);
   align-items: center;
   border-block: 1px solid var(--line);
-  background: rgba(255, 252, 247, 0.55);
+  background: linear-gradient(135deg, rgba(255, 251, 245, 0.78), rgba(235, 219, 199, 0.42));
 }
 
 .counter-card,
@@ -326,7 +330,7 @@ h3 {
 
 .story {
   border-block: 1px solid var(--line);
-  background: linear-gradient(180deg, rgba(239, 226, 209, 0.58), rgba(255, 250, 244, 0.78));
+  background: linear-gradient(180deg, rgba(234, 219, 201, 0.64), rgba(255, 250, 244, 0.84));
 }
 
 .story-copy {
@@ -545,7 +549,7 @@ h3 {
   }
 
   .hero-logo-panel {
-    max-width: 520px;
+    max-width: 340px;
   }
 }
 
