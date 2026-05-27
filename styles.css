@@ -330,14 +330,61 @@ h3 {
 
 .story {
   border-block: 1px solid var(--line);
-  background: linear-gradient(180deg, rgba(234, 219, 201, 0.64), rgba(255, 250, 244, 0.84));
+  background: linear-gradient(180deg, rgba(234, 219, 201, 0.72), rgba(255, 250, 244, 0.9));
+}
+
+.story-panel {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.7fr) minmax(0, 1fr);
+  gap: clamp(28px, 5vw, 64px);
+  align-items: start;
+  max-width: 1180px;
+  padding: clamp(24px, 4vw, 42px);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 251, 245, 0.68);
+  box-shadow: var(--shadow);
+}
+
+.story-intro {
+  position: sticky;
+  top: 24px;
+}
+
+.story-intro h2 {
+  margin-bottom: 22px;
+  font-size: clamp(34px, 4.8vw, 56px);
+  line-height: 1.04;
+}
+
+.story-callout {
+  margin: 0;
+  padding: 18px 20px;
+  border-left: 3px solid var(--gold);
+  background: rgba(245, 229, 207, 0.52);
+  color: var(--ink);
+  font-size: 18px;
+  font-weight: 750;
+  line-height: 1.5;
 }
 
 .story-copy {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px 28px;
-  max-width: 1100px;
+  gap: 16px;
+  max-width: 680px;
+}
+
+.story-copy p {
+  margin: 0;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(141, 101, 62, 0.14);
+  font-size: 17px;
+  line-height: 1.78;
+}
+
+.story-copy p:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 
 .reviews {
@@ -551,6 +598,14 @@ h3 {
   .trust-strip,
   .story-copy {
     grid-template-columns: 1fr;
+  }
+
+  .story-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .story-intro {
+    position: static;
   }
 
   .hero {
