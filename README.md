@@ -1,27 +1,31 @@
-# ProfitProphet Website
+# ProfitProphet Website — Final Reviewed Build
 
-This folder is a static GitHub Pages website for ProfitProphet preorder inquiries.
+Premium local-business style landing page for ProfitProphet. This final reviewed build keeps one clear offer: **Reserve ProfitProphet for $297**.
+
+## Pages
+
+- `index.html` — landing page with founder story, preorder tracker, bot capabilities, workflow, included items, live-mode requirements, $297 reserve section, and FAQ.
+- `inquiry.html` — email inquiry page for the $297 preorder reserve.
 
 ## Files
 
-- `index.html` - main preorder sales page
-- `inquiry.html` - preorder inquiry page with email links
-- `styles.css` - site styling
-- `profitprophet-logo.png` - site logo
+- `styles.css` — responsive premium local-business visual system, polished logo treatment, smooth card formatting, subtle animations, and reduced-motion support.
+- `script.js` — lightweight scroll reveal animation logic.
+- `profitprophet-logo.png` — original logo image.
+- `profitprophet-logo-cropped.png` — polished logo asset used in hero and inquiry panels.
+- `profitprophet-mark.png` — compact logo mark used in the header.
 
-## Publish With GitHub Pages
+## Offer
 
-1. Create a new GitHub repository, for example `profitprophet-site`.
-2. Upload everything in this folder to the root of that repository.
-3. In GitHub, open the repository's `Settings`.
-4. Click `Pages` in the left sidebar.
-5. Under `Build and deployment`, set `Source` to `Deploy from a branch`.
-6. Set `Branch` to `main` and folder to `/root`.
-7. Click `Save`.
-8. Wait for GitHub Pages to publish. The live URL will look like:
+The site lists one price only: **$297 preorder reserve**.
 
-   `https://YOUR-USERNAME.github.io/profitprophet-site/`
+## Safety wording
 
-Every preorder button points to `inquiry.html`, where visitors are directed to email `profitprophet143@gmail.com`. The listed preorder price is `$350`.
+The site avoids profit guarantees and reminds visitors that crypto trading is risky. It also tells visitors not to email wallet secrets, seed phrases, private keys, or API secrets.
 
-Note: the preorder tracker and rotating quote section are marked as launch-layout/demo content. Replace them with verified data and real customer reviews before public launch.
+## Upload notes
+
+For GitHub Pages, upload the contents of `buddykoko.github.io-main` so `index.html`, `inquiry.html`, `styles.css`, `script.js`, and the logo images are all in the same folder.
+
+
+Final update: fixed the header logo presentation and added a moving green navigation bar that follows section clicks and scroll position.
