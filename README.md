@@ -22,4 +22,6 @@ This folder is a static GitHub Pages website for ProfitProphet preorder inquirie
 
    `https://YOUR-USERNAME.github.io/profitprophet-site/`
 
-Every preorder button points to `inquiry.html`, where visitors are directed to email `profitprophetbot@gmail.com`. The listed preorder price is `$350`.
+Every preorder button points to `inquiry.html`, where visitors are directed to email `profitprophet143@gmail.com`. The listed preorder price is `$350`.
+
+Note: the preorder tracker and rotating quote section are marked as launch-layout/demo content. Replace them with verified data and real customer reviews before public launch.
